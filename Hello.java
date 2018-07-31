@@ -1,4 +1,4 @@
-/* package whatever; // don't place package name! */
+1/* package whatever; // don't place package name! */
 
 import java.util.*;
 import java.lang.*;
@@ -11,7 +11,9 @@ class Hello
 	{
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		for(int i=0;i<n;i++)
+		for(int i=1;i<=n;i++)
+		{
 		System.out.println("Hello");
+		}
 	}
 }
