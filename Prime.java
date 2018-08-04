@@ -12,6 +12,8 @@ class Ideone
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 		int count=0;
+		while(n<=1000)
+		{
 		for(int i=1;i<=n;i++)
 		{
 		    if(n%i==0)
@@ -21,5 +23,6 @@ class Ideone
 	     System.out.println("yes");
 	  else
 	      System.out.println("no");
+	}
 	}
 }
