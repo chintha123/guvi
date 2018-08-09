@@ -14,12 +14,12 @@ class Ideone
 		{
 			if(Character.isDigit(c))
 			{
-			   System.out.println("yes");
+			   System.out.println("Yes");
 			   break;
 			}
 			  else
 			  {
-			   System.out.println("no");
+			   System.out.println("No");
 			   break;
 			  }
 		}
