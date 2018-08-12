@@ -11,17 +11,22 @@ class Ideone
 	{
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int a[]=new int[n];
-		a[0]=1;
-		a[1]=1;
+	           int first=1;
+		int second=1,next;
+		if(n==1)
+		     System.out.print(first);
+		else if(n==2)
+		  System.out.print(first+" "+second);
+	          else
+	          {
+		System.out.print(first+" "+second);
 		for(int i=2;i<n;i++)
-		   a[i]=a[i-1]+a[i-2];
-		   for(int i=0;i<n;i++)
-		   {
-		     if(i==n-1)
-		     System.out.print(a[i]);
-		    else
-		  System.out.print(a[i]+" ");
-		   }
+		{
+			next=first+second;
+			System.out.print(" "+next);
+			first=second;
+			second=next;
+		}
+	          }
 	}
 }
