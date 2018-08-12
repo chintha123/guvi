@@ -16,7 +16,7 @@ class Ideone
 		{
 			if(Character.isDigit(c));
 			else if(Character.isLetter(c));
-			else if(c==' ');
+			else if(c==' '||c=='.');
 			else
 			count++;
 		}
