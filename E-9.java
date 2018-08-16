@@ -8,7 +8,7 @@ class GUVI
 		Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int m=sc.nextInt();
-          int avg=(m+n)/2;
+          int avg=m+n;
           System.out.println(avg);
 	}
 }
