@@ -21,6 +21,10 @@ class GUVI
         temp=temp/10;
 	}
 	for(int i=count-1;i>=0;i--)
+	{
+		if(i==0)
+			System.ouy.print(a[i]);
+		else
 	System.out.print(a[i]+" ");
 	}
 }
