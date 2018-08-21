@@ -13,7 +13,7 @@ class Ideone
                         int n=sc.nextInt();
                         int m=sc.nextInt();
                         int res=m*n;
-                        for(int i=1;i<res;i++)
+                        for(int i=0;i<=res;i++)
                         {
                         if(res==(i*i))
                         {
