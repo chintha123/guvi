@@ -13,7 +13,7 @@ class Ideone
              String s=sc.next();
              char ch[]=s.toCharArray();
              for(int i=0;i<s.length();i=i+2){
-             	if(i==s.length()-1()||i==s.length()-2)
+             	if(i==s.length()-2||i==s.length()-1)
              	System.out.print(ch[i]+" ");
              	else
 	          System.out.print(ch[i]);
