@@ -13,7 +13,8 @@ class Ideone
 		int a=sc.nextInt();
 		int d=sc.nextInt();
 		int n=sc.nextInt();
-		int res=(n/2)*(2*a+(n-1)*d);
+		int res=n*(2*a+(n-1)*d);
+		res=res/2;
 		System.out.println(res);
 	}
 }
