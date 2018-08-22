@@ -13,7 +13,7 @@ class Ideone
 		int l=sc.nextInt();
 		int w=sc.nextInt();
 	           int h=sc.nextInt();
-	           int area=2*(l*w+w*h+h*l);
+	           int area=2*(l*h+w*h+w*l);
 	           int volume=l*w*h;
 	           System.out.println(area+" "+volume);
 	}
