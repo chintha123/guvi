@@ -11,8 +11,20 @@ class Ideone
 	{
 		Scanner sc=new Scanner(System.in);
 		String s=sc.nextLine();
-		String s1=s.substring(0,1).toUpperCase()+s.substring(1);
-		System.out.println(s1);
+		String s1[]=s.split("\\s");
+		for(int i=0;i<s1.length;i++)
+		{
+			char c=s1[i].charAt(0);
+			char t=Character.toUpperCase(c);
+			s1[i]=s1[i].replace(c,t);
+		}
+		for(int i=0;i<s1.length;i++)
+		{
+		if(i==s1.length-1)
+		System.out.print(s1[i]);
+		else
+		System.out.print(s1[i]+" ");
+		}
 	
 	}
 }
