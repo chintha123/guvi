@@ -38,5 +38,7 @@ class Ideone
   	else
   	 System.out.print(min+" ");
   }
+  if(x==0)
+  System.out.print("-1");
    }
 }
