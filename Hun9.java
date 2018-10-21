@@ -15,15 +15,24 @@ class Ideone
 	    int a[]=new int[n];
 	    for(int i=0;i<n;i++)
 	    a[i]=sc.nextInt();
+	    int min=Math.abs(a[0]+a[1]);
+	    int sum=0;
+	    int min1=0;
+	    int min2=1;
 	    for(int i=0;i<n;i++)
 	    {
 	    	for(int j=i+1;j<n;j++)
 	    	{
-	    		int res=a[i]+a[j];
-	    			 if(res==0)
-	    			System.out.println(a[i]+" "+a[j]);
-
+	    		sum=Math.abs(a[i]+a[j]);
+	    		if(min>sum)
+	    		{
+	    			min1=i;
+	    			min2=j;
+	    			min=sum;
+	    		}
+	    	
 	    	}
 	    }
+	    System.out.print(a[min1]+" "+a[min2]);
 	}
 }
