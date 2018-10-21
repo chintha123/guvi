@@ -19,11 +19,10 @@ class Ideone
 	    {
 	    	for(int j=i+1;j<n;j++)
 	    	{
-	    		if(a[i]<a[j])
+	    		for(int k=j+1;k<n;k++)
 	    		{
-	    			int res=a[i]+a[j];
-	    			if(res>a[i]&&res>a[j])
-	    			System.out.println(a[i]+" "+a[j]+" "+res);
+	    			 if(a[k]==a[i]+a[j])
+	    			System.out.println(a[i]+" "+a[j]+" "+a[k]);
 	    		}
 	    	}
 	    }
