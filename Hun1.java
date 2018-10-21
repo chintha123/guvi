@@ -15,6 +15,8 @@ class Ideone
     int a[]=new int[n];
     for(int i=0;i<n;i++)
      a[i]=sc.nextInt();
+     int b[]=new int[n];
+     int x=0;
       Arrays.sort(a);
      int p=-1;
      int uni=0;
@@ -32,13 +34,18 @@ class Ideone
            }
        if(count>1)
         {
-            if(i==n-1)
-             System.out.print(a[i]);
-             else
-               System.out.print(a[i]+" ");
-          }
+        	b[x]=a[i];
+        	x++;
+        }
     p=p+count;
      i=p;
+   }
+   for(int i=0;i<x;i++)
+   {
+   	if(i==x-1)
+             System.out.print(b[i]);
+             else
+               System.out.print(b[i]+" ");
    }
 if(uni==0)
 System.out.print("unique");
