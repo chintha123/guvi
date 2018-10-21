@@ -31,7 +31,7 @@ class ArraySubset
           }
        }
     }
-if(count==n)
+if(n==count+1)
 System.out.print("YES");
 else
 System.out.print("NO");
