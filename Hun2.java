@@ -16,7 +16,6 @@ class Ideone
     for(int i=0;i<n;i++)
      a[i]=sc.nextInt();
      int b[]=new int[n];
-     int x=0;
       Arrays.sort(a);
   for(int i=n-1;i>=0;i--)
              System.out.print(a[i]);
