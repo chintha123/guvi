@@ -14,6 +14,7 @@ class Ideone
 		int n=sc.nextInt();
 		int m=sc.nextInt();
 	int res=0;
+	int x=0;
 		for(int i=n+1;i<m;i++)
 		{
 			int count=0;
@@ -23,15 +24,16 @@ class Ideone
 				count++;
 			}
 			if(count==2)
+			{
 			res=i;
-		}
-		String s=Integer.toBinaryString(res);
-		int x=0;
-		for(int i=0;i<s.length();i++)
+			String s=Integer.toBinaryString(res);
+			for(int k=0;k<s.length();k++)
 		{
-		char ch=s.charAt(i);
+		char ch=s.charAt(k);
 		if(ch=='1')
 		x++;
+		}
+			}
 		}
 		System.out.print(x);
 	}
