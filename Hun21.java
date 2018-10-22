@@ -21,20 +21,19 @@ class Ideone
 		a[i][j]=sc.nextInt();	
 		}
 	}
-	for(int i=0;i<n;i++)
-	{
-		for(int j=0;j<m;j++)
-		{
-	      if(a[i][j]==0)
-	      {
-	      	for(int k=0;k<n;k++)
-	      	{
-	      		a[i][k]=0;
-	      		a[k][i]=0;
-	      	}
-	      }
-		}
-	}
+	int l,k;
+	for(int i=0;i<n;i++){
+           for(int j=0;j<m;j++){
+               if(a[i][j]==0){
+                   for( k=0;k<m;k++){
+                       a[i][k]=0;
+                   }
+                   for(l=0;l<n;l++){
+                       a[l][j]=0;
+                   }
+               }
+           }
+       }
 	for(int i=0;i<n;i++)
 	{
 		for(int j=0;j<m;j++)
