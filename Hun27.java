@@ -13,12 +13,12 @@ class Ideone
 		Scanner sc=new Scanner(System.in);
 		String s=sc.next();
 		String s2="";
-		for(int i=0;i<s.length();i++)
+		for(int i=s.length()-1;i>=0;i--)
 		{
 			char ch=s.charAt(i);
 			s2=s2+ch;
 		}
-		if(s2.equals(s))
+				if(s2.equals(s))
 		{
 			char ch1[]=s.toCharArray();
 			for(int i=0;i<ch1.length-1;i++)
