@@ -20,6 +20,9 @@ class Ideone
 		{
 		sum=sum+a[i];
 		}
+		if(sum==0)
+		System.out.print(n/2);
+		else
 		System.out.print(sum);
 	}
 }
