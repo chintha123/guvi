@@ -11,7 +11,7 @@ class Ideone
 	{
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
-		String s=sc.next();
+		String s=sc.nextLine();
 		String rev="";
 		for(int i=s.length()-1;i>=0;i--)
 		{
